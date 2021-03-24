@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lewis Carroll's word puzzle</title>
+  <script src="js/main.js" type="module"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <section class="intro">
+    <h1>Lewis Caroll's word puzzle</h1>
+    <p>A word ladder puzzle begins with two words, and to solve the puzzle one must find a chain of other words to link the two, in which two adjacent words (that is, words in successive steps) differ by one letter.</p>
+    <p>The player is given a start word and an end word. In order to win the game, the player must change the start word into the end word progressively, creating an existing word at each step. Each step consists of a single letter substitution.</p>
+    <p>For example, the following is a solution to the word ladder puzzle between words "cold" and "warm":</p>
+    <p>COLD → CORD → CARD → WARD → WARM</p>
+    <p>You will be given a random start word with an end word. Click on a box and use your keyboard to change the letter. Continue changing one letter at a time until you've reached the end word. The boxes will only update if you enter an existing word.</p>
+    <button id="start">Start</button>
+  </section>
+  <section class="game hide">
+    <span id="start-word"></span>
+    <span id="end-word"></span>
+    <div class="game-boxes">
+      <div class="game-box" data-box="0"></div>
+      <div class="game-box" data-box="1"></div>
+      <div class="game-box" data-box="2"></div>
+      <div class="game-box" data-box="3"></div>
+    </div>
+    <span id="number">Number of guesses: 0</span>
+    <p id="guesses">Words guessed:</p>
+  </section>
+  <section class="won hide">
+    <div>
+      <h1>You won!</h1>
+      <span id="won">Text</span>
+      <button id="restart">Play again</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>

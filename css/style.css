@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #EEE;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 800px;
+  padding: 5rem 1rem 1rem 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #78A1BB;
+  background-color: #283044;
+  color: #EBF5EE;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hide {
+  display: none !important;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.game span {
+  margin-bottom: 1rem;
+}
+
+.game p {
+  margin: 0;
+}
+
+.game-boxes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #78A1BB;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+
+.game-box.selected {
+  border: 2px solid #283044;
+}
+
+.wrong {
+  color: #C70000;
+}
+
+.won {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.won div {
+  background-color: #EEE;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.won span {
+  display: block;
+  margin: 1rem 0;
+}
